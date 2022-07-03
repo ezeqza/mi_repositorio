@@ -1,306 +1,271 @@
-
 /*HEADER Y NAVEGEDOR*/
-
-
-ul a{
-    text-decoration: none;
-    color: white;
-    padding: 0 11px;
+ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0 11px;
 }
-
-ul a:hover{
-    color: #EF5742;
+ul a ul a:hover {
+  color: #EF5742;
 }
-.active{
-    color: #EF5742;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+ul a ul a:hover .active {
+  color: #EF5742;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 
 /*footer*/
-
-
 /*flyers*/
-
-#imgizq{
-    width: 300px;
-    height: 400px;
-    margin: 20px;
-}
-#imgder{
-    width: 300px;
-    height: 400px; 
-    margin: 20px;   
+#imgizq {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
 }
 
-#IG2{
-    width: 30px;
-    height: 25px;
-    position: absolute;
-    left: 1400px;
-    top: 800px;
-    text-align: left;
-    display: inline-block;
+#imgder {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
 }
-#FB2{
-    width: 100px;
-    height: 55px;
-    position: absolute;
-    left: 1330px;
-    top: 785px;
-    text-align: left;
-    display: inline-block;
+
+#IG2 {
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  left: 1400px;
+  top: 800px;
+  text-align: left;
+  display: inline-block;
 }
+
+#FB2 {
+  width: 100px;
+  height: 55px;
+  position: absolute;
+  left: 1330px;
+  top: 785px;
+  text-align: left;
+  display: inline-block;
+}
+
 /*formulario*/
-.formulario{
-    margin-left: 600px;
-    background-color: white;
-    width: 500px;
-    height: 600px;
-    font-family: 'Economica', sans-serif;
-    text-align:left;
-    text-size-adjust: 10px;
-    font-size: 4mm;
-    color: #EF5742;
-    
+.formulario {
+  margin-left: 600px;
+  background-color: white;
+  width: 500px;
+  height: 600px;
+  font-family: "Economica", sans-serif;
+  text-align: left;
+  -webkit-text-size-adjust: 10px;
+     -moz-text-size-adjust: 10px;
+          text-size-adjust: 10px;
+  font-size: 4mm;
+  color: #EF5742;
 }
-#logoContacto{
-    width: 500px;
-    height: 250px;
-    position: absolute;
-    left: 100px;
-    top: 250px;
-    text-align: left;
-    display: inline-block;
+
+#logoContacto {
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  left: 100px;
+  top: 250px;
+  text-align: left;
+  display: inline-block;
 }
 
 /*grilla*/
-
 /*body*/
-body{
-    background: white;
-    padding: 5px;
+body {
+  background: white;
+  padding: 5px;
 }
-
 
 /*contenedor*/
-
-.grid-container{
-    background: white;
-    margin: 2px;
-    display: grid;
-    grid-template-areas: "header header header" "nav nav nav" "aside main main" "aside main main" "footer footer footer";
-    grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
-    height: 90vh;
-    column-gap: 2px;
-    row-gap: 5px;
-    
+.grid-container {
+  background: white;
+  margin: 2px;
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "aside main main" "aside main main" "footer footer footer";
+  grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
+  height: 90vh;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+  row-gap: 5px;
 }
 
-
 /*item*/
-
-.grid-item{
-    padding: 2px;
-    border-radius: 20px;
+.grid-item {
+  padding: 2px;
+  border-radius: 20px;
 }
 
 /*footer*/
-
-.grid-footer{
-    background-color: rgb(246, 235, 235);
-    grid-area: footer;
-    display: grid;
-
+.grid-footer {
+  background-color: rgb(246, 235, 235);
+  grid-area: footer;
+  display: grid;
 }
 
 /*nav*/
-
-.grid-nav{
-background-image: url(../assets/taxinewyork.jpg);
-grid-area: nav;
-display: grid;
-
+.grid-nav {
+  background-image: url(../assets/taxinewyork.jpg);
+  grid-area: nav;
+  display: grid;
 }
 
-.buscar{
-    display: flex;
-    justify-content: end;
+.buscar {
+  display: flex;
+  justify-content: end;
 }
-
-
-
 
 /*main*/
-
-.grid-main{
-background-color: white;
-grid-area: main;
-text-align: center;
-
-
+.grid-main {
+  background-color: white;
+  grid-area: main;
+  text-align: center;
 }
 
 /*aside*/
-
-
-.grid-aside{
-    background-color:white;
-    grid-area: aside;
-    display: inline-block;
-    justify-content: space-between;
-    
+.grid-aside {
+  background-color: white;
+  grid-area: aside;
+  display: inline-block;
+  justify-content: space-between;
 }
 
 /*header*/
-
-.grid-header{
-    background: linear-gradient(white, #a18884, transparent );
-    grid-area: header;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: space-around;
-    display: inline-block;
-    
+.grid-header {
+  background: linear-gradient(white, #a18884, transparent);
+  grid-area: header;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-content: space-around;
+  display: inline-block;
 }
+
 /*caja navegador*/
-ul li{
-    display: inline-block;
-    justify-content: space-between;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.7cm;
-    
-    
-
+ul li {
+  display: inline-block;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.7cm;
 }
 
-#fotos{
-    width: 250px;
-    height: 150px;
-    border-radius: 30px;
-    margin: 2px;
-    
+#fotos {
+  width: 250px;
+  height: 150px;
+  border-radius: 30px;
+  margin: 2px;
 }
 
-h1{
-    color: #EF5742;
-    display: inline-block;
-    
-
-    
+h1 {
+  color: #EF5742;
+  display: inline-block;
 }
-.hola{
-    text-align: center;
-    margin-left: 300px;
+h1 .hola {
+  text-align: center;
+  margin-left: 300px;
 }
 
-p{
-    color: #EF5742;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.7cm;
+p {
+  color: #EF5742;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.7cm;
 }
 
-
-.logoimagen{
-    height: 100px;
-    width: 230px;
-    display: inline-block;
-    justify-content: left;
+.logoimagen {
+  height: 100px;
+  width: 230px;
+  display: inline-block;
+  justify-content: left;
 }
 
 #divFondo {
-    width: 200px;
-    height: 20px;
-    position: absolute;
-    z-index: -1;
-    border: solid 2px black;
-}
-.derechos{
-    width: 200px;
-    height: 20px;
-    background-color: #EF5742;
-}
-.derechos{
-    transition: height 1s, width 1s;
-}
-.derechos:hover{
-    height: 1px;
-    width: 0px;
-   
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  border: solid 2px black;
 }
 
-.input1{
-    height: 50px;
-    width: 80px;
-    margin-left: 500PX;
-    transition: all 2s;
+.derechos {
+  width: 200px;
+  height: 20px;
+  background-color: #EF5742;
 }
 
-.input1:focus{
-    width: 100px;
-    height: 70px;
-    font-size: 24px;
+.derechos {
+  transition: height 1s, width 1s;
 }
 
-#divAnim{
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    animation-name: un _efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-direction: alternate;
+.derechos:hover {
+  height: 1px;
+  width: 0px;
 }
 
+.input1 {
+  height: 50px;
+  width: 80px;
+  margin-left: 500PX;
+  transition: all 2s;
+}
 
+.input1:focus {
+  width: 100px;
+  height: 70px;
+  font-size: 24px;
+}
 
+#divAnim {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  -webkit-animation-name: un _efecto;
+          animation-name: un _efecto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 
 /*mobile*/
-
-@media  screen and (min-width: 320px) {
-    
-/*HEADER Y NAVEGEDOR*/
-
-
-ul a{
+@media screen and (min-width: 320px) {
+  /*HEADER Y NAVEGEDOR*/
+  ul a {
     text-decoration: none;
     color: white;
     padding: 0 20px;
-    
-}
+  }
 
-ul a:hover{
+  ul a:hover {
     color: #EF5742;
-}
-.active{
+  }
+
+  .active {
     color: #EF5742;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
 
-
-/*footer*/
-
-
-/*flyers*/
-
-#imgizq{
+  /*footer*/
+  /*flyers*/
+  #imgizq {
     width: 300px;
     height: 400px;
     margin: 20px;
     display: inline-block;
-    
-}
-#imgder{
-    width: 300px;
-    height: 400px; 
-    margin: 20px;   
-    display: inline-block;
-}
+  }
 
-#IG2{
+  #imgder {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    display: inline-block;
+  }
+
+  #IG2 {
     width: 30px;
     height: 25px;
     position: absolute;
@@ -308,8 +273,9 @@ ul a:hover{
     top: 800px;
     text-align: left;
     display: inline-block;
-}
-#FB2{
+  }
+
+  #FB2 {
     width: 100px;
     height: 55px;
     position: absolute;
@@ -317,21 +283,24 @@ ul a:hover{
     top: 785px;
     text-align: left;
     display: inline-block;
-}
-/*formulario*/
-.formulario{
+  }
+
+  /*formulario*/
+  .formulario {
     margin-left: 600px;
     background-color: white;
     width: 500px;
     height: 600px;
-    font-family: 'Economica', sans-serif;
-    text-align:left;
-    text-size-adjust: 10px;
+    font-family: "Economica", sans-serif;
+    text-align: left;
+    -webkit-text-size-adjust: 10px;
+       -moz-text-size-adjust: 10px;
+            text-size-adjust: 10px;
     font-size: 4mm;
     color: #EF5742;
-    
-}
-#logoContacto{
+  }
+
+  #logoContacto {
     width: 500px;
     height: 250px;
     position: absolute;
@@ -339,168 +308,138 @@ ul a:hover{
     top: 250px;
     text-align: left;
     display: inline-block;
-}
+  }
 
-/*grilla*/
-
-/*body*/
-body{
+  /*grilla*/
+  /*body*/
+  body {
     background: white;
     padding: 5px;
-}
+  }
 
-
-/*contenedor*/
-
-.grid-container{
+  /*contenedor*/
+  .grid-container {
     background: white;
     margin: 2px;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "aside main main" "aside main main" "footer footer footer";
     grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
     height: 90vh;
-    column-gap: 2px;
+    -moz-column-gap: 2px;
+         column-gap: 2px;
     row-gap: 5px;
-    
-}
+  }
 
-
-/*item*/
-
-.grid-item{
+  /*item*/
+  .grid-item {
     padding: 2px;
     border-radius: 20px;
-}
+  }
 
-/*footer*/
-
-.grid-footer{
+  /*footer*/
+  .grid-footer {
     background-color: white;
     grid-area: footer;
-    
+  }
 
-}
+  /*nav*/
+  .grid-nav {
+    background-image: url(../assets/taxinewyork.jpg);
+    grid-area: nav;
+    display: grid;
+  }
 
-/*nav*/
-
-.grid-nav{
-background-image: url(../assets/taxinewyork.jpg);
-grid-area: nav;
-display: grid;
-
-}
-
-.buscar{
+  .buscar {
     display: flex;
     justify-content: end;
-}
+  }
 
+  /*main*/
+  .grid-main {
+    background-color: white;
+    grid-area: main;
+    text-align: center;
+  }
 
-
-
-/*main*/
-
-.grid-main{
-background-color: white;
-grid-area: main;
-text-align: center;
-
-
-}
-
-/*aside*/
-
-
-.grid-aside{
-    background-color:white;
+  /*aside*/
+  .grid-aside {
+    background-color: white;
     grid-area: aside;
     display: inline-block;
     justify-content: space-between;
-    
-}
+  }
 
-/*header*/
-
-.grid-header{
+  /*header*/
+  .grid-header {
     background-color: white;
     grid-area: header;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     justify-content: space-around;
     display: inline-block;
-    
-}
-/*caja navegador*/
-ul li{
+  }
+
+  /*caja navegador*/
+  ul li {
     display: inline-block;
     justify-content: space-between;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.7cm;
-    
+  }
 
-}
-
-#fotos{
+  #fotos {
     width: 250px;
     height: 150px;
     border-radius: 30px;
     margin: 2px;
-    
-}
+  }
 
-h1{
+  h1 {
     color: #EF5742;
     display: inline-block;
-    
+  }
 
-    
-}
-.hola{
+  .hola {
     text-align: center;
-}
+  }
 
-p{
+  p {
     color: #EF5742;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.7cm;
-}
+  }
 
-
-.logoimagen{
+  .logoimagen {
     height: 100px;
     width: 230px;
     display: inline-block;
     justify-content: left;
+  }
+}
+.nacional {
+  font-size: 2cm;
+  text-decoration: underline;
 }
 
-    
+p {
+  display: inline-block;
 }
 
-.nacional{
-    font-size: 2cm;
-    text-decoration: underline;
+.card {
+  display: inline-block;
 }
 
-p{
-    display: inline-block;
+.footer {
+  text-align: left;
+  font-size: 1cm;
 }
 
-.card{
-    display: inline-block;
+.logoContacto {
+  display: inline-block;
+  height: 300px;
+  width: 200px;
 }
 
-.footer{
-    text-align: left;
-    font-size: 1cm;
-}
-
-.logoContacto{
-    display: inline-block;
-    height: 300px;
-    width: 200px;
-}
-
-.formulario{
-
-    border: solid black;
-    border-radius: 10px;
-}
+.formulario {
+  border: solid black;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
